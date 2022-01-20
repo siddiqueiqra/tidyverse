@@ -1,5 +1,10 @@
 ---
 title: "Gapminder EDA with Tidyverse"
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 author: "By Iqra Siddique"
 date: "`20,january,2022`"
 output:
